@@ -10,9 +10,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      color: Colors.deepOrangeAccent,
       title: "My app",
       home: Scaffold(
-        appBar: AppBar(title: Text("Landing Page"), elevation: 5.0),
+        appBar: AppBar(
+          title: Text("Landing Page"),
+          elevation: 5.0,
+          backgroundColor: Colors.deepOrangeAccent,
+        ),
         body: ContactList(),
         floatingActionButton: FloatingActionButton(
             onPressed: null,
